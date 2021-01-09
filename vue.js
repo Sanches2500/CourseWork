@@ -62,11 +62,7 @@ const App = {
     },
 
     toggleBackButton() {
-      if (this.activeIndex === 0) {
-        this.backButtonDisabled = true
-      } else {
-        this.backButtonDisabled = false
-      }
+      this.backButtonDisabled = this.activeIndex === 0;
     },
   },
   computed: {
